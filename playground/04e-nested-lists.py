@@ -13,3 +13,6 @@ print(dirty_dozen)
 ## output: [['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears'], ['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes']]
 print(dirty_dozen[1][1])
 # output: Kale
+
+print(dirty_dozen[0][1])
+# output: Nectarines
