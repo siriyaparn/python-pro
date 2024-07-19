@@ -15,5 +15,20 @@ def encrypt(plain_text, shift_amount):
         cipher_text += new_letter
     print(f"The encoded text is {cipher_text}")
 
-# Call the encrypt function
-encrypt(plain_text = text, shift_amount = shift)
+# Create decrypt function
+def decrypt(cipher_text, shift_amount):
+    plain_text = ""
+    for letter in cipher_text:
+        position = alphabet.index(letter)
+        new_position = position - shift_amount
+        new_letter = alphabet[new_position]
+        plain_text += new_letter
+    print(f"The decoded text is {plain_text}")
+
+# Check if the user wanted to encrypt or decrypt the message
+if direction == "encode":
+    # Call the encrypt function
+    encrypt(plain_text = text, shift_amount = shift)
+elif direction == "decode":
+    # Call the decrypt function
+    decrypt(cipher_text = text, shift_amount = shift)
