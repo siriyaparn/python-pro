@@ -14,3 +14,7 @@ while continue_bidding:
     # Save data into dictionary {name:price}
     bids[name] = price
     should_continue = input("Are there any other bidders? Type 'yes' or 'no'. \n")
+
+    if should_continue == 'no':
+
+# Compare bids in dictionary
