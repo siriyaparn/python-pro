@@ -1,3 +1,4 @@
+# Create functions
 def add(n1, n2):
     return n1 + n2
 
@@ -19,11 +20,13 @@ operations = {
 }
 
 # Use a dictionary operations to perform the calculations
+# Input
 first_number = float(input("What is the first number?: "))
-
-# Print the example of symbol
-for symbol in operations:
+for symbol in operations:      # Print the example of symbol
     print(symbol)
-
 operation_synbol = input("Pick an operation: ")
 second_number = float(input("What is the next number?: "))
+
+# Call function
+answer = operations[operation_synbol](first_number, second_number)
+print(f"{first_number} {operation_synbol} {second_number} = {answer}")
