@@ -30,3 +30,5 @@ second_number = float(input("What is the next number?: "))
 # Call function
 answer = operations[operation_synbol](first_number, second_number)
 print(f"{first_number} {operation_synbol} {second_number} = {answer}")
+
+ask = input("Do you want to continue?: ")
