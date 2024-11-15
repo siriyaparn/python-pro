@@ -31,4 +31,4 @@ second_number = float(input("What is the next number?: "))
 answer = operations[operation_synbol](first_number, second_number)
 print(f"{first_number} {operation_synbol} {second_number} = {answer}")
 
-ask = input("Do you want to continue?: ")
+choice = input(f"Type 'y' to continue calculating {answer}, or type 'n' to start a new calculation.")
