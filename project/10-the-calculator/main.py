@@ -1,4 +1,3 @@
-
 from art import logo
 
 # Create operation functions
