@@ -17,6 +17,14 @@ def deal_card():
     card = random.choice(cards)
     return card
 
+# Create function to calculate score
+def calculate_score(cards):
+    # Check a blackjack: a hand with only 2 cards: Ace and 10 and returns 0 which will respresent a blackjack in our game
+    if sum(cards) == 21 and len(cards) == 2:
+        return 0
+    
+
+
 for _ in range(2):
     # Append random cards to lists
     user_cards.append(deal_card())
