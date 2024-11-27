@@ -22,7 +22,10 @@ def calculate_score(cards):
     # Check a blackjack: a hand with only 2 cards: Ace and 10 and returns 0 which will respresent a blackjack in our game
     if sum(cards) == 21 and len(cards) == 2:
         return 0
-    
+    # Check for an ace(11): if the score is already over 21, replace 11 with 1
+    if 11 in cards and sum(cards) > 21:
+        cards.remove(11)
+        cards.append(1)
 
 
 for _ in range(2):
