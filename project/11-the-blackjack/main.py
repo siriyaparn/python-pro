@@ -2,10 +2,6 @@
 import random
 from art import logo
 
-# Declear parameters
-user_cards = []
-computer_cards = []
-
 play = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ")
 if play == 'y':
     print(logo)
@@ -19,6 +15,7 @@ def deal_card():
 
 # Create function to calculate score
 def calculate_score(cards):
+    """Take a list of cards and return the score calculated from the cards"""
     # Check a blackjack: a hand with only 2 cards: Ace and 10 and returns 0 which will respresent a blackjack in our game
     if sum(cards) == 21 and len(cards) == 2:
         return 0
@@ -26,9 +23,25 @@ def calculate_score(cards):
     if 11 in cards and sum(cards) > 21:
         cards.remove(11)
         cards.append(1)
+    return sum(cards)
 
+# Declear parameters
+user_cards = []
+computer_cards = []
+is_game_over = False
 
+# Ramdom cards
 for _ in range(2):
     # Append random cards to lists
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
+
+# Calculate score
+user_score = calculate_score(user_cards)
+computer_score = calculate_score(computer_cards)
+print(f"Your cards : {user_cards} , current score: {user_score}")
+print(f"Computer's first card: {computer_cards[0]}")
+
+# End game condition
+if user_score == 0 or computer_score == 0 or user_score > 21:
+    is_game_over = True
