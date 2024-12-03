@@ -25,6 +25,8 @@ def calculate_score(cards):
         cards.append(1)
     return sum(cards)
 
+# Create compare function
+
 # Declear parameters
 user_cards = []
 computer_cards = []
