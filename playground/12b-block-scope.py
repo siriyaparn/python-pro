@@ -8,6 +8,7 @@ if game_level < 5:
 print(new_enemy)            
 
 def create_enemy():
+    new_enemy = ""
     if game_level < 5:
         new_enemy = enemies[0]  # new_enemy is in an if block, so if you want to print
     print(new_enemy)            # print within the boundary of this function
