@@ -2,7 +2,9 @@
 enemies = 1
 
 def increase_enemies():
-    enemies = 2
+    # To create a global variable inside a function, you can use the global keyword.
+    global enemies
+    enemies += 1
     print(f"enemies inside function: {enemies}")
 
 # Local scope
