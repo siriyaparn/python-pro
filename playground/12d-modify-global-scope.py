@@ -7,8 +7,13 @@ def increase_enemies():
     enemies += 1
     print(f"enemies inside function: {enemies}")
 
-# Local scope
-increase_enemies()
+increase_enemies() # Local scope
+print(f"enemies inside function: {enemies}") # Global scope
 
-# Global scope
+##################################### Another way ###################################
+def increase_enemies(enemy):
+    print(f"enemies inside function: {enemies}")
+    return enemy + 1
+
+enemies = increase_enemies(enemies)
 print(f"enemies inside function: {enemies}")
