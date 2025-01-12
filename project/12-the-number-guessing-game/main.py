@@ -11,7 +11,7 @@ random_number = random.randint(1,100)
 
 def easy():
     attempt = 10
-    if attempt <= 10 and attempt != 0:
+    while attempt <= 10:
         print(f"You have {attempt} attempts remaining to guess the number.")
         guess = int(input("Make a guess: "))
         if guess > random_number:
@@ -22,7 +22,8 @@ def easy():
             attempt -= 1
         elif guess == random_number:
             print("You win!")
-    elif attempt == 0:
+            break
+    if attempt == 0:
         print("You lose.")
 
 def hard():
