@@ -1,7 +1,7 @@
 word_per_page = 0
 
 page = int(input("Number of pages: "))
-word_per_page == int(input("Number of words per page: ")) # Here is the bug
+word_per_page = int(input("Number of words per page: ")) # Here is the bug
 
 total_words = page * word_per_page
 
