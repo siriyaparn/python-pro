@@ -1,4 +1,4 @@
-data = data = [
+data = [
     {'name': 'Instagram', 'follower': 346, 'description': 'Social media platform', 'country': 'United States'},
     {'name': 'Cristiano Ronaldo', 'follower': 215, 'description': 'Footballer', 'country': 'Portugal'},
     {'name': 'Taylor Swift', 'follower': 210, 'description': 'Singer-songwriter', 'country': 'United States'},
