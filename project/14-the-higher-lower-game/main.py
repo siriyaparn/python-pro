@@ -7,5 +7,10 @@ from art import logo
 print(logo)
 
 # Generate a random account from the game data
-account = random.choice(game_data.data)
-print(account['name'])
+a = random.choice(game_data.data)
+print(f"Compare A: {a['name']}, a {a['description']}, from {a['country']}.")
+print("vs")
+
+b = random.choice(game_data.data)
+print(f"Compare B: {b['name']}, a {b['description']}, from {b['country']}.")
+ans = input(f"Who has more followers? Type 'A' or 'B': ")
