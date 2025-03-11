@@ -13,4 +13,8 @@ print("vs")
 
 b = random.choice(game_data.data)
 print(f"Compare B: {b['name']}, a {b['description']}, from {b['country']}.")
+
+# Ask user for a guess
 ans = input(f"Who has more followers? Type 'A' or 'B': ")
+
+# Check if user is correct
