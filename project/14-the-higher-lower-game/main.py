@@ -7,14 +7,21 @@ from art import logo
 print(logo)
 
 # Generate a random account from the game data
-a = random.choice(game_data.data)
-print(f"Compare A: {a['name']}, a {a['description']}, from {a['country']}.")
+account_a = random.choice(game_data.data)
+account_b = random.choice(game_data.data)
+if account_a == account_b:
+    ccount_b = random.choice(game_data.data)
+    
+print(f"Compare A: {account_a['name']}, a {account_a['description']}, from {account_a['country']}.")
 print("vs")
-
-b = random.choice(game_data.data)
-print(f"Compare B: {b['name']}, a {b['description']}, from {b['country']}.")
+print(f"Compare B: {account_b['name']}, a {account_b['description']}, from {account_b['country']}.")
 
 # Ask user for a guess
 ans = input(f"Who has more followers? Type 'A' or 'B': ")
 
 # Check if user is correct
+## Get follower count of each account
+## Use if statement to check if user is correct
+
+
+# Give user feedback on their guess
