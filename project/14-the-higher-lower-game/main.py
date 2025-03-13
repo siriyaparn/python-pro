@@ -11,7 +11,7 @@ def format_data(account):
     account_name = account["name"]
     account_descr = account["description"]
     account_country = account["country"]
-    print(f"{account_name}, a {account_descr}, form {account_country}")
+    return(f"{account_name}, a {account_descr}, form {account_country}")
 
 # Generate a random account from the game data
 account_a = random.choice(data)
@@ -19,9 +19,9 @@ account_b = random.choice(data)
 if account_a == account_b:
     ccount_b = random.choice(data)
 
-print(f"Compare A: {account_a['name']}, a {account_a['description']}, from {account_a['country']}.")
+print(f"Compare A: {format_data(account_a)}.")
 print("vs")
-print(f"Compare B: {account_b['name']}, a {account_b['description']}, from {account_b['country']}.")
+print(f"Compare B: {format_data(account_b)}.")
 
 # Ask user for a guess
 ans = input(f"Who has more followers? Type 'A' or 'B': ")
