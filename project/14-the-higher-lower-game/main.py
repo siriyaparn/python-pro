@@ -28,6 +28,7 @@ ans = input(f"Who has more followers? Type 'A' or 'B': ")
 
 # Check if user is correct
 ## Get follower count of each account
+
 ## Use if statement to check if user is correct
 
 
