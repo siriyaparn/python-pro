@@ -1,6 +1,6 @@
 # Import module
 import random
-from art import logo
+from art import logo, vs
 from game_data import data
 
 # Display art logo
@@ -20,14 +20,16 @@ if account_a == account_b:
     ccount_b = random.choice(data)
 
 print(f"Compare A: {format_data(account_a)}.")
-print("vs")
-print(f"Compare B: {format_data(account_b)}.")
+print(vs)
+print(f"Against B: {format_data(account_b)}.")
 
 # Ask user for a guess
-ans = input(f"Who has more followers? Type 'A' or 'B': ")
+guess = input(f"Who has more followers? Type 'A' or 'B': ").lower()
 
 # Check if user is correct
 ## Get follower count of each account
+a_follow_account = account_a["follower_count"]
+b_follow_account = account_b["follower_count"]
 
 ## Use if statement to check if user is correct
 
