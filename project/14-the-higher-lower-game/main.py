@@ -43,3 +43,7 @@ b_follow_account = account_b["follower_count"]
 is_correct = check_answer(guess, a_follow_account, b_follow_account)
 
 # Give user feedback on their guess
+if is_correct:
+    print("You're right!")
+else:
+    print("Sorry, that's wrong.")
