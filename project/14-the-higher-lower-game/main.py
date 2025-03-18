@@ -20,6 +20,7 @@ def check_answer(user_guess, a_followers, b_followers):
     else:
         return user_guess == "b"
 
+score = 0
 
 # Generate a random account from the game data
 account_a = random.choice(data)
@@ -44,6 +45,7 @@ is_correct = check_answer(guess, a_follow_account, b_follow_account)
 
 # Give user feedback on their guess
 if is_correct:
-    print("You're right!")
+    score += 1
+    print(f"You're right! Current score {score}")
 else:
-    print("Sorry, that's wrong.")
+    print(f"Sorry, that's wrong. Final score: {score}.")
