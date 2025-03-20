@@ -21,31 +21,34 @@ def check_answer(user_guess, a_followers, b_followers):
         return user_guess == "b"
 
 score = 0
+game_should_conitnue = True
 
-# Generate a random account from the game data
-account_a = random.choice(data)
-account_b = random.choice(data)
-if account_a == account_b:
-    ccount_b = random.choice(data)
+while game_should_conitnue:
+    # Generate a random account from the game data
+    account_a = random.choice(data)
+    account_b = random.choice(data)
+    if account_a == account_b:
+        ccount_b = random.choice(data)
 
-print(f"Compare A: {format_data(account_a)}.")
-print(vs)
-print(f"Against B: {format_data(account_b)}.")
+    print(f"Compare A: {format_data(account_a)}.")
+    print(vs)
+    print(f"Against B: {format_data(account_b)}.")
 
-# Ask user for a guess
-guess = input(f"Who has more followers? Type 'A' or 'B': ").lower()
+    # Ask user for a guess
+    guess = input(f"Who has more followers? Type 'A' or 'B': ").lower()
 
-# Check if user is correct
-## Get follower count of each account
-a_follow_account = account_a["follower_count"]
-b_follow_account = account_b["follower_count"]
+    # Check if user is correct
+    ## Get follower count of each account
+    a_follow_account = account_a["follower"]
+    b_follow_account = account_b["follower"]
 
-## Use if statement to check if user is correct
-is_correct = check_answer(guess, a_follow_account, b_follow_account)
+    ## Use if statement to check if user is correct
+    is_correct = check_answer(guess, a_follow_account, b_follow_account)
 
-# Give user feedback on their guess
-if is_correct:
-    score += 1
-    print(f"You're right! Current score {score}")
-else:
-    print(f"Sorry, that's wrong. Final score: {score}.")
+    # Give user feedback on their guess
+    if is_correct:
+        score += 1
+        print(f"You're right! Current score {score}")
+    else:
+        print(f"Sorry, that's wrong. Final score: {score}.")
+        game_should_conitnue = False
