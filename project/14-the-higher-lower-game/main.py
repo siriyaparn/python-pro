@@ -22,10 +22,12 @@ def check_answer(user_guess, a_followers, b_followers):
 
 score = 0
 game_should_conitnue = True
+account_b = random.choice(data)
 
 while game_should_conitnue:
     # Generate a random account from the game data
-    account_a = random.choice(data)
+    # Making account at position B become the next account at position A
+    account_a = account_b
     account_b = random.choice(data)
     if account_a == account_b:
         ccount_b = random.choice(data)
