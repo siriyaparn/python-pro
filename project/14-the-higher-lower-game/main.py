@@ -24,6 +24,7 @@ score = 0
 game_should_conitnue = True
 account_b = random.choice(data)
 
+# Make a game repeatable
 while game_should_conitnue:
     # Generate a random account from the game data
     # Making account at position B become the next account at position A
@@ -38,6 +39,9 @@ while game_should_conitnue:
 
     # Ask user for a guess
     guess = input(f"Who has more followers? Type 'A' or 'B': ").lower()
+
+    # Clear the screen
+    print("\n" * 20)
 
     # Check if user is correct
     ## Get follower count of each account
