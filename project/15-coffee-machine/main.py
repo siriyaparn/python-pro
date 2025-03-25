@@ -25,4 +25,5 @@ MENU = {
     },
 }
 
-# Create report
+# Print report of all coffee machine resources
+
