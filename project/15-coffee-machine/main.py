@@ -25,5 +25,13 @@ MENU = {
     },
 }
 
+resource = {
+    "water": 300,
+    "milk": 200,
+    "coffee": 100
+}
+
 # Print report of all coffee machine resources
+
+
 
