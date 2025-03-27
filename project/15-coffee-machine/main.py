@@ -25,13 +25,15 @@ MENU = {
     },
 }
 
-resource = {
+resources = {
     "water": 300,
     "milk": 200,
     "coffee": 100
 }
 
-# Print report of all coffee machine resources
+is_on = True
 
-
-
+while is_on:
+    choice = input("What would you like? (espresso/latte/cappuccino): ")
+    if choice == "off":
+        is_on = False
