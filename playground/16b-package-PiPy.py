@@ -19,4 +19,7 @@ table.add_rows(
 table.add_column("Pokemon Name", ["Pikachu", "Squirtle", "Squirtle"])
 table.add_column("Type", ["Electric", "Water", "Fire"])
 
+# Change attributes
+table.align = "l"
+
 print(table)
