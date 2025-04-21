@@ -8,3 +8,5 @@ coffee_maker = CoffeeMaker()
 
 coffee_maker.report()
 money_machine.report()
+
+# Check resources sufficients
