@@ -3,5 +3,5 @@ class Question:
         self.text = q_text
         self.answer = q_answer
 
-new_q = Question("asdfg", "False")
-print(new_q.answer)
+# new_q = Question("asdfg", "False")
+# print(new_q.answer)
