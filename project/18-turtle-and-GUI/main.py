@@ -12,6 +12,14 @@ for _ in range(4):
     timmy_the_turtle.right(90)
 
 # Challenge 2: Draw a dashed line 
+import turtle as t
+tim = t.Turtle()
+
+for _ in range(10):
+    tim.forward(10)
+    tim.penup
+    tim.forward(10)
+    tim.pendown
 
 screen = Screen()
 screen.exitonclick()
