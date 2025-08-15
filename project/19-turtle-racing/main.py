@@ -1,4 +1,5 @@
 from turtle import Turtle, Screen
+import random
 
 is_race_on = False
 screen = Screen()
@@ -17,6 +18,6 @@ if user_bet:
     is_race_on = True
 
 while is_race_on:
-    
+    random.randint(0,10)
 
 screen.exitonclick()
