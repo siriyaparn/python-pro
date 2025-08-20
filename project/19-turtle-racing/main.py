@@ -18,6 +18,6 @@ if user_bet:
     is_race_on = True
 
 while is_race_on:
-    rand_distance = random.randint(0,10)
+    rand_distance = random.randint(0,10) 
 
 screen.exitonclick()
